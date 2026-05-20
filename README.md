@@ -129,6 +129,92 @@ Veja o funcionamento completo da aplicação no vídeo abaixo:
 [![Demonstração do sistema](https://img.youtube.com/vi/JK-vDPlxTi8/0.jpg)](https://youtu.be/JK-vDPlxTi8)
 
 
+## 🏗️ Infraestrutura do Projeto
+
+Além do desenvolvimento da aplicação web, o projeto também conta com uma estrutura de rede e servidores, simulando um ambiente corporativo completo.
+
+---
+
+### 👥 Active Directory (AD) com usuários
+
+Foi implementado um Active Directory para gerenciamento centralizado de usuários e permissões dentro da rede. Com isso, foi possível:
+
+- Criar contas de usuários  
+- Definir níveis de acesso  
+- Organizar usuários em grupos  
+
+Essa estrutura reforça a segurança e aproxima o projeto de um ambiente corporativo real.
+<img width="1043" height="840" alt="Image" src="https://github.com/user-attachments/assets/946351e5-9c64-4c61-895d-2f27595e4de9" />
+
+---
+
+### 🌍 Serviço de DNS
+
+O DNS (Domain Name System) foi configurado para permitir a resolução de nomes dentro da rede.
+
+Isso possibilita:
+
+- Acesso ao servidor por nome ao invés de IP  
+- Melhor organização da rede  
+- Facilidade de navegação entre máquinas  
+<img width="791" height="556" alt="Image" src="https://github.com/user-attachments/assets/3d96cc5e-10c9-467d-8eae-718c33359fa1" />
+---
+
+### 🗄️ Banco de dados do servidor
+
+O servidor hospeda o banco de dados da aplicação, responsável por armazenar todos os:
+
+- Usuários cadastrados  
+- Espécies em extinção  
+- Informações sobre os biomas  
+
+Todas as informações que não foram colacadas no site foram colocadas no MYSQl do servidor
+<img width="1057" height="816" alt="Image" src="https://github.com/user-attachments/assets/24822ad3-3846-4cd9-bfb0-fda588a21e3f" />
+
+---
+
+### 💻 Máquinas clientes no domínio
+
+As máquinas clientes foram conectadas a o domínio eco.local, permitindo gerenciamento centralizado.
+<img width="1598" height="852" alt="Image" src="https://github.com/user-attachments/assets/eac61edf-c676-4bec-a36a-22f880213460" />
+---
+
+### 🌐 Acesso remoto ao servidor
+
+Foi configurado acesso remoto ao servidor de uma maquina cliente, permitindo sua administração à distância.
+Foi liberado a permissão pela GPO do servidor para tal usuário 
+<img width="1598" height="852" alt="Image" src="https://github.com/user-attachments/assets/eac61edf-c676-4bec-a36a-22f880213460" />
+
+---
+
+### 🔐 Tela de login para acesso ao servidor
+
+O ambiente conta com uma tela de autenticação, garantindo que apenas usuários autorizados tenham acesso ao servidor.
+
+<img width="801" height="851" alt="Image" src="https://github.com/user-attachments/assets/67c79d7c-a115-4ce9-aa27-1751163dffe7" />
+
+---
+
+### 🖥️ Servidor acessado remotamente
+
+O servidor principal da aplicação pode ser acessado remotamente, centralizando os serviços do sistema e permitindo sua gestão de forma eficiente.
+<img width="966" height="854" alt="Image" src="https://github.com/user-attachments/assets/184e3c93-0ac2-4772-a4ef-1fcf5a08b1b3" />
+
+Essa abordagem simula cenários reais de infraestrutura de TI utilizados em empresas.
+
+---
+
+## 🔗 Integração com o Projeto
+
+Toda essa infraestrutura foi projetada para dar suporte à aplicação web desenvolvida, integrando diferentes áreas da tecnologia:
+
+- Desenvolvimento de software  
+- Redes de computadores  
+- Administração de sistemas  
+- Segurança da informação  
+
+Isso torna o projeto mais completo, demonstrando não apenas a aplicação prática do código, mas também da estrutura necessária para mantê-lo em funcionamento.
+
 # 📚 Referência Bibliográfica
 
 BRASIL. Ministério do Meio Ambiente. Instituto Chico Mendes de Conservação da Biodiversidade. *Lista de espécies ameaçadas de extinção no Brasil – 2020*. Base de dados em formato CSV. Disponível em: <https://data.amerigeoss.org/dataset/especies-ameacadas/resource/1f13b062-f3f6-4198-a4c5-3581548bebec/download/lista-de-especies-ameacas-2020.csv>. Acesso em: 11 maio 2026.
