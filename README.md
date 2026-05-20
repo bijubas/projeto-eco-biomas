@@ -122,9 +122,12 @@ O arquivo `tela.py` contém uma versão do sistema com interface gráfica em Tki
 
 ---
 
-## ▶️ Como Executar
+## 🎥 Demonstração do Projeto
 
-Instale as dependências:
+Veja o funcionamento completo da aplicação no vídeo abaixo:
+
+[![Demonstração do sistema](https://img.youtube.com/vi/JK-vDPlxTi8/0.jpg)](https://youtu.be/JK-vDPlxTi8)
+
 
 ```bash
 pip install -r requirements.txt
