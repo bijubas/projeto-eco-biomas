@@ -129,5 +129,7 @@ Veja o funcionamento completo da aplicação no vídeo abaixo:
 [![Demonstração do sistema](https://img.youtube.com/vi/JK-vDPlxTi8/0.jpg)](https://youtu.be/JK-vDPlxTi8)
 
 
-```bash
-pip install -r requirements.txt
+# 📚 Referência Bibliográfica
+
+BRASIL. Ministério do Meio Ambiente. Instituto Chico Mendes de Conservação da Biodiversidade. *Lista de espécies ameaçadas de extinção no Brasil – 2020*. Base de dados em formato CSV. Disponível em: <https://data.amerigeoss.org/dataset/especies-ameacadas/resource/1f13b062-f3f6-4198-a4c5-3581548bebec/download/lista-de-especies-ameacas-2020.csv>. Acesso em: 11 maio 2026.
+
