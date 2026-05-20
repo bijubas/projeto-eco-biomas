@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+<link rel="stylesheet"
+href="{{ url_for('static', filename='APS.css') }}">
+</head>
+<body>
+
+  <header>
+    <h1>Espécies em Extinção 🦜</h1>
+  </header>
+
+  <main>
+    
+    <!-- LADO ESQUERDO -->
+    <div class="left">
+      <img src="{{ url_for('static', filename='bird.gif') }}"
+      class="arara"
+      id="arara">
+    </div>
+
+<!-- CARD CADASTRO -->
+    <div class="right">
+
+      <div class="card">
+
+        <h2>Cadastro</h2>
+
+        <!-- FORM -->
+        <form method="POST">
+
+          <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Nome completo">
+
+          <input
+          type="text"
+          id="usuario"
+          name="usuario"
+          placeholder="Nome de usuário">
+
+          <input
+          type="password"
+          id="senha"
+          name="senha"
+          placeholder="Senha">
+
+          <br>
+
+          <button
+          class="btn"
+          type="submit">
+
+            Cadastrar
+
+          </button>
+
+        </form>
+
+        <div class="cadastro">
+
+          <a href="/" class="btn">
+            Voltar para Login
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+<script src="{{ url_for('static', filename='APS.js') }}"></script>
+</body>
+</html>
