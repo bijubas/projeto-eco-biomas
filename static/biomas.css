@@ -1,0 +1,220 @@
+header {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  background: rgba(0,0,0,0.4);
+}
+
+h1 {
+
+  text-align: center;
+
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("temporario.JPEG") no-repeat center/cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* CONTAINER PRINCIPAL */
+
+.container {
+  display: flex;
+  height: calc(100vh - 100px);
+  position: relative;
+}
+
+
+/* LADO ESQUERDO */
+
+.mapa {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+
+/* SVG */
+
+.mapa svg {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+
+
+/* LADO DIREITO */
+
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+}
+
+.message-box {
+
+  width: 80%;
+  max-width: 700px;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  border-radius: 20px;
+
+  backdrop-filter: blur(10px);
+
+  padding: 20px;
+
+  color: white;
+
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* ESTADO NORMAL */
+.bioma {
+  fill: #999;
+  transition: transform 0.3s ease, filter 0.3s ease, fill 0.3s ease;
+  transform-box: fill-box;
+  transform-origin: center;
+  cursor: pointer;
+}
+
+/* 🔥 ESCURECE TODOS QUANDO UM ESTÁ EM HOVER */
+svg:has(.bioma:hover) .bioma {
+  filter: brightness(0.5);
+}
+
+.bioma:hover {
+  transform: scale(2);
+  filter: none; /* remove aquele efeito apagado */
+}
+
+.bioma-buttons {
+  display: block;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.bioma-btn {
+  position: absolute;
+  border: 0;
+  width: 92px;
+  height: 44px;
+  padding: 0;
+  background: transparent;
+  color: transparent;
+  font-size: 0;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: none;
+}
+
+.bioma-btn:hover {
+  background: transparent;
+}
+
+.bioma-btn.amazonia {
+  left: 35%;
+  top: 25%;
+}
+
+.bioma-btn.cerrado {
+  left: 55%;
+  top: 50%;
+}
+
+.bioma-btn.caatinga {
+  left: 66%;
+  top: 32%;
+}
+
+.bioma-btn.mata-atlantica {
+  left: 60%;
+  top: 62%;
+}
+
+.bioma-btn.pantanal {
+  left: 42%;
+  top: 61%;
+}
+
+.bioma-btn.pampa {
+  left: 43%;
+  top: 80%;
+  width: 180px;
+  height: 120px;
+}
+
+.bioma-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.bioma-modal.ativo {
+  display: flex;
+}
+
+.bioma-modal-content {
+  width: min(92vw, 560px);
+  max-height: 82vh;
+  overflow: auto;
+  background: rgba(18, 30, 24, 0.96);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 8px;
+  padding: 22px;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.55);
+  position: relative;
+}
+
+.bioma-modal-close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.12);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bioma-modal-close:hover {
+  background: rgba(255,255,255,0.22);
+}
+
+.especie-card {
+  border-top: 1px solid rgba(255,255,255,0.16);
+  padding: 12px 0;
+}
+
+.especie-card strong {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.especie-card span {
+  display: block;
+  color: rgba(255,255,255,0.78);
+  font-size: 14px;
+}

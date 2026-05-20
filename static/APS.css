@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("fundo.jpeg") no-repeat center/cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  background: rgba(0,0,0,0.4);
+}
+
+main {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+
+.left {
+  flex: 1;
+  position: relative;
+}
+
+
+.arara {
+  width: 120px;
+  position: absolute;
+  transition: transform 0.2s;
+}
+
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* sobe o card */
+  padding-top: 60px; /* controla o quanto sobe */
+}
+
+.card {
+  backdrop-filter: blur(10px);
+  background-color: darkgreen;
+  padding: 40px 30px;
+  border-radius: 15px;
+  color: white;
+  width: 260px;
+  text-align: center;
+}
+
+
+.card input {
+  width: 90%;
+  padding: 10px 0;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+.btn {
+  display: block;
+  width: 100%;
+
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+
+  margin: 10px 0;
+
+  background: #00c853;
+  color: white;
+
+  font-family: Arial, sans-serif; /* força mesma fonte */
+  font-size: 14px;                /* força mesmo tamanho */
+  font-weight: bold;
+
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  box-sizing: border-box; /* evita diferença de tamanho */
+}
+
+.btn:hover {
+  background: #00a844;
+}
+
+.card a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background: #00c853;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.card a:hover {
+  background: #00a844;
+}
+
+
+.cadastro {
+  margin-top: 10px;
+}
+
+.arara.erro {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+  }
