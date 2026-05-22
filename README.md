@@ -183,7 +183,7 @@ As máquinas clientes foram conectadas a o domínio eco.local, permitindo gerenc
 
 Foi configurado acesso remoto ao servidor de uma maquina cliente, permitindo sua administração à distância.
 Foi liberado a permissão pela GPO do servidor para tal usuário 
-<img width="1598" height="852" alt="Image" src="https://github.com/user-attachments/assets/eac61edf-c676-4bec-a36a-22f880213460" />
+<img width="787" height="839" alt="Image" src="https://github.com/user-attachments/assets/b0d20055-0bcc-4efb-a0e0-199a7ae36016" />
 
 ---
 
